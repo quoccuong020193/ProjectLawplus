@@ -14,7 +14,6 @@ body {
   line-height: 1.7;
   font-size: 14px;
   color: #80858c;
-
 }
 
 a {
@@ -109,34 +108,35 @@ img {
   color: #c8ac48;
 }
 
-
-
 /* <-- =================== MAIN ==================== --> */
-main{
-  min-height:5000px;
+main {
+  min-height: 5000px;
 }
 
-.picture-wrapper img{
+.picture-wrapper img {
   position: relative;
   width: 100%;
 }
 
-h1,h2{
+h1,
+h2 {
   width: 100%;
   font-weight: 700;
   font-size: 40px;
   position: absolute;
   text-align: center;
-  top:50%;
- 
+  top: 50%;
+  justify-content: center;
+  color: #ededed;
 }
-h2{
+h2 {
   font-size: 18px;
   position: absolute;
-  top:58%;
-  font-weight: 400; 
+  top: 60%;
+  justify-content: center;
+  font-weight: 400;
 }
-.main-wrapper .img{
+.main-wrapper .img {
   position: relative;
   background-image: no-repeat;
   background-color: rgba(0, 0, 0, 0);
@@ -149,15 +149,35 @@ h2{
   visibility: inherit;
   z-index: 20;
 }
+.btn-main {
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  text-align: center;
+  justify-content: center;
+}
+
+.btn-main a{
+  text-decoration: none;
+}
+.btn-main a:hover{
+  background-color: #c8ac48;
+}
+.button {
+  border: 1px solid #ccc;
+  padding: 10px 40px;
+  color: #fff;
+  margin: 0px 25px;
+}
+
 /* <-- =================== FOOTER ==================== --> */
 
 /* <-- ============== footer top ============= --> */
 .footer-top {
   background-color: #0a152a;
   width: 100%;
-
 }
-.main-footer{
+.main-footer {
   padding-top: 40px;
 }
 .logo-footer {
@@ -209,31 +229,30 @@ h2{
   background-color: #c8ac48;
   /* background-color: blue; */
 }
-.footer-item__title{
+.footer-item__title {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.7);
   padding-bottom: 20px;
 }
-.footer-item__content .icon{
+.footer-item__content .icon {
   padding-bottom: 15px;
 }
-.footer-item__content ul li{
+.footer-item__content ul li {
   text-decoration: none;
   list-style-type: none;
-
 }
-.footer-item__content ul li a{
+.footer-item__content ul li a {
   font-size: 12px;
-  color:#a7aeba;
+  color: #a7aeba;
 }
-.footer-item__content ul li a:hover{
-  color:#c8ac48 ;
+.footer-item__content ul li a:hover {
+  color: #c8ac48;
 }
 .flaticon-double-right-arrow:before {
   font-size: 8px;
-  margin-left:0px;
+  margin-left: 0px;
   margin-right: 10px;
 }
 
@@ -244,9 +263,8 @@ h2{
 }
 .text-bottom {
   padding: 10px 0px;
-  width:100%;
+  width: 100%;
 }
-.text-bottom .item{
+.text-bottom .item {
   text-align: center;
- }
- 
+}
