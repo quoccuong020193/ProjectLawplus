@@ -129,15 +129,12 @@ h1,h2{
   text-align: center;
   top:50%;
  
-  
- 
 }
 h2{
   font-size: 18px;
   position: absolute;
   top:58%;
-  font-weight: 400;
- 
+  font-weight: 400; 
 }
 .main-wrapper .img{
   position: relative;
@@ -251,4 +248,5 @@ h2{
 }
 .text-bottom .item{
   text-align: center;
+ }
  
