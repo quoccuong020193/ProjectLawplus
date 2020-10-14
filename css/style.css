@@ -30,6 +30,14 @@ img {
   display: inline-block;
 }
 
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-size: 15px;
+  vertical-align: middle;
+}
+
 /* <-- =================== HEADER ==================== --> */
 /* [class^="flaticon-"]:before {
   font-size: 16px;
@@ -99,7 +107,7 @@ img {
 }
 
 .search {
-  padding-top: 14px;
+  padding: 16px 0px;
 }
 .search a {
   color: #898989;
@@ -110,7 +118,7 @@ img {
 
 /* <-- =================== MAIN ==================== --> */
 main {
-  min-height: 5000px;
+  min-height: 2000px;
 }
 
 .picture-wrapper img {
@@ -157,19 +165,39 @@ h2 {
   justify-content: center;
 }
 
-.btn-main a{
+.btn-main a {
   text-decoration: none;
 }
-.btn-main a:hover{
+.btn-main a:hover {
   background-color: #c8ac48;
 }
 .button {
+  text-transform: uppercase;
   border: 1px solid #ccc;
   padding: 10px 40px;
   color: #fff;
   margin: 0px 25px;
 }
+.list-block {
+  position: absolute;
+  width: 100%;
+  left: 3%;
+  
+}
+.icon-image img {
+  width: 12%;
+}
+.icon-image {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.list-block .item {
 
+  text-align: center;
+  width: 30%;
+  background-color: aqua;
+}
 /* <-- =================== FOOTER ==================== --> */
 
 /* <-- ============== footer top ============= --> */
@@ -209,9 +237,6 @@ h2 {
   margin-right: 12px;
   margin-left: 0px;
 }
-/* .footer-item__content ul li:last-child {
-  margin-left: 0px;
-} */
 .tcl-col-3::before {
   content: "";
   display: block;
