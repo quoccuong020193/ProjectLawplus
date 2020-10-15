@@ -176,11 +176,10 @@ h2 {
 .list-block {
   position: absolute;
   width: 100%;
-  left: 3%;
-  z-index: 1;
-  bottom:-35%;
-  top:100%
-
+  margin-left: 3%;
+  z-index: 0;
+  bottom: 10;
+  transform: translateY(-30%);
 }
 .icon-image img {
   width: 12%;
@@ -189,6 +188,7 @@ h2 {
   display: block;
   width: 100%;
   text-align: center;
+  padding-bottom: 5px;
 }
 .list-block .item1 {
   padding: 30px 0px;
@@ -206,6 +206,18 @@ h2 {
   font-size: 18px;
   color: #fff;
   font-weight: 700;
+  padding-bottom: 5px;
+}
+
+/* <-- ============== main-title ============= --> */
+.main-title-wrapper{
+  padding-top:200px;
+  width: 100%;
+  text-align: center;
+}
+
+.main-title img{
+  font-size: 12px;
 }
 /* <-- =================== FOOTER ==================== --> */
 
