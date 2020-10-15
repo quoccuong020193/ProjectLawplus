@@ -118,7 +118,7 @@ img {
 
 /* <-- =================== MAIN ==================== --> */
 
-.picture-wrapper img {
+.picture-wrapper {
   position: relative;
   width: 100%;
 }
@@ -173,19 +173,19 @@ h2 {
   color: #fff;
   margin: 0px 5px;
 }
+
+/* <-- ============== main ============= --> */
 .list-block {
   position: absolute;
-  width: 100%;
   margin-left: 3%;
   z-index: 0;
   bottom: 10;
-  transform: translateY(-30%);
+  transform: translateX(33%) translateY(-30%);
 }
 .icon-image img {
   width: 12%;
 }
 .icon-image {
-  display: block;
   width: 100%;
   text-align: center;
   padding-bottom: 5px;
@@ -195,6 +195,7 @@ h2 {
   text-align: center;
   width: 30%;
   background-color: #304771;
+  margin:0;
 }
 .list-block .item2 {
   background-color: #283c61;
@@ -218,6 +219,40 @@ h2 {
 
 .main-title img{
   font-size: 12px;
+}
+.subtitle{
+
+}
+.subtitle-inner{
+  padding-top: 10px;
+  font-size:14px;
+  text-transform: uppercase;
+} 
+.subtite-title{
+  font-size:40px;
+  text-transform: uppercase;
+  color:#1e3051;
+}
+
+.text-title {
+  text-align: left;
+  padding-top: 40px;
+}
+.btn-title{
+ padding-top: 40px;
+}
+.btn-title a{
+  text-decoration: none;
+  margin-left:0px;
+  border:1px solid #1e3051;
+
+}
+.btn-text1{
+  color:#1e3051;
+}
+.btn-title a:hover{
+  background-color:#283c61;
+  color: #fff;
 }
 /* <-- =================== FOOTER ==================== --> */
 
