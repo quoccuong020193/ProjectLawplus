@@ -12,6 +12,23 @@
     <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
     <link rel="stylesheet" href="css/bootstrap-tcl.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $('.your-class').slick(
+      {
+        dots: false,
+        infinite: true,
+        speed: 300,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        slidesToShow: 1,
+       
+      }
+    );
+  });
+              
+    </script>
   </head>
   <body>
       <!-- =================== HEADER ==================== -->
@@ -92,13 +109,16 @@
        <!-- =========== Main- ============-->
       <div class="main-wrapper">
         <div class="picture-wrapper">
-          <img src="images/pic.png" alt="">
+          <div class="your-class">
+            <div>  <img src="images/pic.png" alt=""></div>
+            <div>  <img src="images/pic.png" alt=""></div>
+          </div>
           <h1>THE GREATEST FIRM YOU CAN TRUST</h1>
           <h2>THE GREATEST FIRM YOU CAN TRUST</h2>
           <div class="btn-main d-flex">
             <a class="button" href="#">read more</a>
             <a class="button" href="">read more</a>
-          </div>
+        </div>
           <div class="tcl-container">
             <div class="tcl-row">
               <div class="list-block d-flex">
