@@ -305,10 +305,7 @@ img {
 .intro-section .human {
   position: relative;
 }
-.intro-section .human .human-images img {
-  /* transform: scale(1.3); */
-  /* transform-origin: 0 100%;  */
-}
+
 .intro-section > .tcl-row {
   align-items: flex-end;
 }
