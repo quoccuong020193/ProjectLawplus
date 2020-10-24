@@ -1,4 +1,18 @@
-
+$(document).ready(function () {
+    $('.slider').slick(
+      {
+        dots: false,
+        infinite: true,
+        speed: 300,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: false,
+        slidesToShow: 1,
+        prevArrow: '<div class="custom-arrow arrow-prev"><i class="fas fa-chevron-left"></i></div>',
+        nextArrow: '<div class="custom-arrow arrow-next"><i class="fas fa-chevron-right"></i></div>',
+      }
+    );
+  });
 
 // var wrapperTitle = Array.from(document.querySelectorAll('.human'));
 
@@ -11,27 +25,3 @@
 // })
 
 
-
-// div class="wrapper-title d-flex">
-//             <div class="">
-//               <div class="text-title ">
-//                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis dicta rerum qui in, ullam odio nesciunt quas quod aliquam sit adipisci, modi quisquam expedita nemo, blanditiis consectetur iure est provident distinctio fugiat. Officia at, quia temporibus veniam ducimus cum praesentium et fuga dolor sapiente laboriosam doloremque suscipit modi repellat.</p> 
-//                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus adipisci mollitia voluptate doloremque minima quisquam sit corrupti repudiandae commodi impedit?</p>
-//                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis dicta rerum qui in, ullam odio nesciunt quas quod aliquam sit adipisci, modi quisquam expedita nemo, blanditiis consectetur iure est provident distinctio fugiat. Officia at, quia temporibus veniam ducimus cum praesentium et fuga dolor sapiente laboriosam doloremque suscipit modi 
-//                repellat.</p> 
-//                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis dicta rerum qui in, ullam odio nesciunt quas quod aliquam sit adipisci, modi quisquam expedita nemo, blanditiis consectetur iure est provident distinctio fugiat. Officia at, quia temporibus veniam ducimus cum praesentium et fuga dolor sapiente laboriosam doloremque suscipit modi repellat.</p> 
-//                <div class="btn-title d-flex">
-//                  <a class="button btn-text1" href="#">read more</a>
-//                  <a class="button btn-text1" href="">read more</a>
-//                </div>
-//             </div>
-//             <div class="">
-//                 <div class="human">
-//                   <div class="human-image">
-//                     <a href=""> <img src="images/human.png" alt=""></a>
-//                   </div>
-//                 </div>
-//             </div>
-//           </div>
-//           </div>
-//          </div>
