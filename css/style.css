@@ -101,15 +101,47 @@ img {
 .main-list {
   font-weight: 700;
 }
+.main-list li {
+  position: relative;
+}
 .main-list li a {
+  display: block;
   text-decoration: none;
   color: #898989;
   text-transform: uppercase;
 }
-.main-list li a:hover {
+.main-list li.active > a,
+.main-list li:hover > a {
   color: #c8ac48;
 }
+.main-list:hover li.active > a {
+  color: #898989;
+}
+.main-list li:hover.active > a {
+  color: #c8ac48;
+}
+.main-list ul {
+  border-top:1px solid #333;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0,0.2);
+  width: 200px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(27%);
+  background-color: #fff;
+  position: absolute;
+  opacity:0;
+  text-align:left;
+  pointer-events: none;
+  transition: all .4s ease; 
+}
+.main-list li:hover > ul{
+  opacity: 1;
+  pointer-events:auto;
+  width: 200px;
+  
 
+}
 .search {
   padding: 18px 0px;
 }
@@ -126,28 +158,28 @@ img {
   position: relative;
   width: 100%;
 }
-.custom-arrow{
-  font-size:40px;
+.custom-arrow {
+  font-size: 40px;
   z-index: 1;
   top: 50%;
   color: #fff;
 }
-.arrow-prev{
-  left:1%;
+.arrow-prev {
+  left: 1%;
   position: absolute;
 }
- 
-.arrow-next{
+
+.arrow-next {
   right: 1%;
   position: absolute;
 }
 .slider .slide-item {
   position: relative;
 }
-.slider .slide-item::before { 
-  content: '';
+.slider .slide-item::before {
+  content: "";
   display: block;
-  padding-top: 60%;
+  padding-top: 40%;
   background-color: red;
 }
 .slide-item .slide-img {
@@ -159,14 +191,12 @@ img {
   object-fit: cover;
 }
 
-
 .slide-content {
   position: absolute;
   top: 50%;
   left: 50%;
   text-align: center;
-  transform:translate(-50%, -50%)
-  
+  transform: translate(-50%, -50%);
 }
 .slide-content h1,
 .slide-content h2 {
@@ -302,14 +332,13 @@ img {
   transform: translateY(-8%);
   transition: all 0.7s ease;
 }
-.intro-section .human {
+/* .intro-section .human {
   position: relative;
-}
+} */
 
 .intro-section > .tcl-row {
   align-items: flex-end;
 }
-
 
 /* <-- =================== FOOTER ==================== --> */
 
