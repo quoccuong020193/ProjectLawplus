@@ -42,11 +42,6 @@ img {
 }
 
 /* <-- =================== HEADER ==================== --> */
-/* [class^="flaticon-"]:before {
-  font-size: 16px;
-  vertical-align: middle;
-} */
-
 .social {
   padding-top: 8px;
 }
@@ -120,27 +115,47 @@ img {
 .main-list li:hover.active > a {
   color: #c8ac48;
 }
-.main-list ul {
-  border-top:1px solid #333;
-  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0,0.2);
+
+.main-list ul{
+  padding-top: 40px;
+  /* border-bottom: 1px solid black; */
+  /* box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2); */
   width: 200px;
   top: 100%;
   left: 0;
   z-index: 1;
-  transform: translateY(27%);
   background-color: #fff;
   position: absolute;
-  opacity:0;
-  text-align:left;
+  opacity: 0;
+  text-align: left;
   pointer-events: none;
-  transition: all .4s ease; 
+  transition: all 0.4s ease;
+  z-index: 1;
+  text-align: left;
+ 
+   
 }
-.main-list li:hover > ul{
-  opacity: 1;
-  pointer-events:auto;
-  width: 200px;
-  
 
+.sub-menu  li a{
+  padding:3px 0px;
+  text-align: left;
+  margin-left: -18px;
+ 
+  
+}
+
+.main-list li:hover > ul {
+  opacity: 1;
+  pointer-events: auto;
+  width: 200px;
+  z-index: 1;
+}
+.sub-menu{
+  border-top-color
+}
+.sub-menu li a {
+  font-weight: normal;
+  justify-content: center;
 }
 .search {
   padding: 18px 0px;
@@ -190,7 +205,6 @@ img {
   height: 100%;
   object-fit: cover;
 }
-
 .slide-content {
   position: absolute;
   top: 50%;
@@ -240,6 +254,7 @@ img {
 }
 .btn-main a:hover {
   background-color: #c8ac48;
+  color: #fff;
 }
 .button {
   text-transform: uppercase;
@@ -332,12 +347,48 @@ img {
   transform: translateY(-8%);
   transition: all 0.7s ease;
 }
-/* .intro-section .human {
-  position: relative;
-} */
 
 .intro-section > .tcl-row {
   align-items: flex-end;
+}
+/* <-- =========== entry ========== --> */
+
+.entry-wrapper .entry-image{
+  position: relative;
+}
+.entry-wrapper .entry-image::before {
+  content: "";
+  display: block;
+  padding-top: 20%;
+  background-color: red;
+}
+ .entry-image img{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.entry-title{
+  position:absolute;
+  text-align: center;
+  width: 100%;
+  top: 25%;
+  color: #fff;
+  padding:10px;
+}
+.entry-title h1{
+  font-size: 40px;
+}
+.entry-btn{
+  background-color:#1e3051;
+  border:none;
+}
+.entry-btn:hover {
+  transform: translateY(-5%);
+  box-shadow: 5px 10px 8px black;
+  transition: all 0.7s ease;
 }
 
 /* <-- =================== FOOTER ==================== --> */
