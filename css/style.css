@@ -410,8 +410,8 @@ img {
   bottom: 0;
   right: 50%;
   position: absolute;
-  border-top: 1px solid #c8ac48;
-  border-bottom: 1px solid #c8ac48;
+  border-top: 2px solid #c8ac48;
+  border-bottom: 2px solid #c8ac48;
   transition: all 2s ease;
 }
 .practice-content .item::after{
@@ -421,17 +421,27 @@ img {
   bottom: 50%;
   right: 0;
   position: absolute;
-  border-right: 1px solid #c8ac48;
-  border-left: 1px solid #c8ac48;
+  border-right: 2px solid #c8ac48;
+  border-left: 2px solid #c8ac48;
   transition: all 1s ease;
 }
 .practice-content .item:hover::before{
+  cursor: pointer;
   left: 0;
   right: 0;
 }
+.practice-content:hover .title-prac{
+  color:#c8ac48;
+ 
+}
 .practice-content .item:hover::after{
+  cursor: pointer;
   top: 0;
   bottom: 0;
+}
+
+.practice-content .item:hover{
+  background-color:#1e3051;
 }
 .content-cell .title-prac {
   color: #1e3051;
