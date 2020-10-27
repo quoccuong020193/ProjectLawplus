@@ -116,7 +116,7 @@ img {
   color: #c8ac48;
 }
 
-.main-list ul{
+.main-list ul {
   padding-top: 40px;
   /* border-bottom: 1px solid black; */
   /* box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2); */
@@ -132,16 +132,12 @@ img {
   transition: all 0.4s ease;
   z-index: 1;
   text-align: left;
- 
-   
 }
 
-.sub-menu  li a{
-  padding:3px 0px;
+.sub-menu li a {
+  padding: 3px 0px;
   text-align: left;
   margin-left: -18px;
- 
-  
 }
 
 .main-list li:hover > ul {
@@ -263,7 +259,7 @@ img {
 
 /* <-- ============== main ============= --> */
 .icon-image img {
-  width: 12%;
+  width: 16%;
 }
 .icon-image {
   width: 100%;
@@ -294,6 +290,7 @@ img {
   color: #fff;
   font-weight: 700;
   padding-bottom: 5px;
+  text-align: center;
 }
 
 /* <-- ============== main-title ============= --> */
@@ -350,7 +347,7 @@ img {
 }
 /* <-- =========== entry ========== --> */
 
-.entry-wrapper .entry-image{
+.entry-wrapper .entry-image {
   position: relative;
 }
 .entry-wrapper .entry-image::before {
@@ -359,35 +356,87 @@ img {
   padding-top: 20%;
   background-color: red;
 }
- .entry-image img{
+.entry-image img {
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.entry-title{
-  position:absolute;
+.entry-title {
+  position: absolute;
   text-align: center;
   width: 100%;
   top: 25%;
   color: #fff;
-  padding:10px;
+  padding: 10px;
 }
-.entry-title h1{
+.entry-title h1 {
   font-size: 40px;
 }
-.entry-btn{
-  background-color:#1e3051;
-  border:none;
+.entry-btn {
+  background-color: #1e3051;
+  border: none;
 }
 .entry-btn:hover {
   transform: translateY(-5%);
   box-shadow: 5px 10px 8px black;
   transition: all 0.7s ease;
 }
+.entry-wrapper {
+  padding-bottom: 100px;
+}
+/* <-- =========== Practice ========== --> */
+.practice-content {
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  justify-content: space-between;
+}
 
+.practice-content .item {
+  border: 1px solid #ccc;
+  width: calc(30% - -18px);
+  padding: 40px;
+  margin-bottom: 30px;
+}
+.content-cell .title-prac {
+  color: #1e3051;
+}
+.content-cell .read-more {
+  width: 100%;
+  text-align: center;
+  color: #c8ac48;
+  font-size: 16px;
+}
+.content-cell a {
+  text-decoration: none;
+}
+.read-more::after {
+  font-weight: 700;
+  margin-left: 2px;
+  content: "→";
+}
+.read-more{
+  position: relative;
+  padding-bottom: 2px;
+  border:none;
+}
+
+.read-more:before{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  height: 1px;
+  background-color: #c8ac48;
+
+}
+.read-more:hover::before{
+  left: 100%;
+  border-bottom: 1px solid #c8ac48;
+}
 /* <-- =================== FOOTER ==================== --> */
 
 /* <-- ============== footer top ============= --> */
