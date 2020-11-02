@@ -254,7 +254,7 @@ img {
   border: 1px solid #ccc;
   padding: 10px 40px;
   color: #fff;
-  margin: 0px 5px;
+  margin: 0px 10px;
 }
 
 /* <-- ============== main ============= --> */
@@ -376,6 +376,8 @@ img {
   font-size: 40px;
 }
 .entry-btn {
+  transform: translateX(-50px);
+  position:absolute;
   background-color: #1e3051;
   border: none;
 }
