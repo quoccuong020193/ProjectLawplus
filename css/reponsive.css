@@ -8,6 +8,14 @@
   .tcl-container {
     max-width: 700px;
   }
+  .footer-main .tcl-row > .tcl-col-3 {
+    max-width: 33.33333%;
+    flex: 33.33333%;
+  }
+  .list-practice > .tcl-col-4 {
+    max-width: 33.33333%;
+    flex: 33.33333%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -16,49 +24,30 @@
     padding-right: 15px;
     max-width: 568px;
   }
-  /* <-- =========== entry ========== --> */
-  .entry-title {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 5%;
-    color: #fff;
-    padding: 10px;
-  }
-  .entry-title h1 {
-    font-size: 30px;
-  }
-  .entry-wrapper .entry-image::before {
-    content: "";
-    display: block;
-    padding-top: 40%;
-    background-color: red;
-    width: 100%;
-    height: 100%;
-  }
-  .entry-btn {
-    transform: translateX(-100px);
-    position: absolute;
-    background-color: #1e3051;
-    border: none;
-  }
-  .tcl-row > .tcl-col-6 {
+  .footer-main .tcl-row > .tcl-col-3 {
     max-width: 50%;
     flex: 50%;
   }
-
-  .tcl-row > .tcl-col-3 {
+  .list-practice > .tcl-col-4 {
     max-width: 50%;
     flex: 50%;
+  }
+  .practice-wrapper .item {
+    max-width: 50%;
   }
 }
+
 
 @media only screen and (max-width: 567px) {
   .tcl-container {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .tcl-row > .tcl-col-4 {
+  .footer-main .tcl-row > .tcl-col-3 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  .list-practice > .tcl-col-4 {
     max-width: 100%;
     flex: 100%;
   }
@@ -66,42 +55,12 @@
     max-width: 100%;
     flex: 100%;
   }
-
   /* <-- ============== main ============= --> */
-  .list-block{
-    display:inline-block;
-    padding-top: 50px;
-  }
-  .list-block .item1{
-    width: 50%;
-  }
+
   /* <-- =========== main-title ========== --> */
-  .intro-section .btn-title {
-    padding-left: 20px;
-  }
+
   /* <-- =========== entry ========== --> */
-  .entry-title h1 {
-    padding-top: 30px;
-    font-size: 40px;
-  }
-  .btn-main {
-    padding-top: 50px;
-  }
-
-  .entry-wrapper .entry-image::before {
-    content: "";
-    display: block;
-    padding-top: 90%;
-    background-color: red;
-    width: 100%;
-    height: 100%;
-  }
-
   .practice-wrapper .item {
     width: 100%;
-  }
-  .tcl-row > .tcl-col-3 {
-    max-width: 100%;
-    flex: 100%;
   }
 }
