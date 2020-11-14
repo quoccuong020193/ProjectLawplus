@@ -150,6 +150,8 @@ img {
   font-weight: normal;
   justify-content: center;
 }
+
+/* <-- ========== search =========--> */
 .search {
   padding: 18px 0px;
 }
@@ -159,7 +161,70 @@ img {
 .search a:hover {
   color: #c8ac48;
 }
+.icon-search {
+ padding: 15px;
+}
+.icon-search a {
+  color: black;
+}
+.wrapper-form-search {
+  transform: translateY(120%);
+  z-index: 1;
+  display: block;
 
+}
+.form-group {
+  position: relative;
+}
+.form-group .form-control {
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 35px;
+  background-color: #fff;
+  font-size: 13px;
+  color: #333;
+  border: 1px solid #999;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+.form-group .form-control:focus {
+  border-color: #c8ac48db;
+}
+
+.form-group .form-control::-webkit-input-placeholder {
+  /* Edge */
+  color: #999;
+}
+.form-group .form-control:-ms-input-placeholder {
+  /* Internet Explorer */
+  color: #999;
+}
+.form-group .form-control::placeholder {
+  color: #999;
+}
+
+.form-group .icons {
+  top: 0px;
+  right: 15px;
+  color: #999;
+  font-size: 18px;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+.form-group .form-control:focus + .icons {
+  color: #1e3051;
+}
+.main-menu {
+  position: relative;
+}
+.form-search {
+  transform: translateX(-100%);
+  position: absolute;
+}
+.form-search:hover span {
+  cursor: pointer;
+}
 /* <-- =================== MAIN ==================== --> */
 
 .picture-wrapper {
@@ -187,7 +252,7 @@ img {
 .slider .slide-item::before {
   content: "";
   display: block;
-  padding-top: 40%;
+  padding-top: 50%;
   background-color: red;
 }
 .slide-item .slide-img {
@@ -207,42 +272,21 @@ img {
 }
 .slide-content h1,
 .slide-content h2 {
-  /* width: 100%; */
   font-weight: 700;
   font-size: 40px;
-  /* position: absolute; */
   text-align: center;
-  /* top: 50%; */
   color: #ededed;
 }
-
 .slide-content h2 {
   font-size: 18px;
-  /* position: absolute; */
-  /* padding-top: 60px; */
   font-weight: 400;
 }
-/* .main-wrapper .img {
-  padding: 100px 0px;
-  position: relative;
-  background-image: no-repeat;
-  background-color: rgba(0, 0, 0, 0);
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  visibility: inherit;
-} */
 .slide-content .btn-main {
-  /* position: absolute; */
-  /* width: 100%; */
-  /* top: 40%; */
-  /* padding: 230px 0; */
   text-align: center;
   justify-content: center;
 }
 .btn-main a {
+  border: 1px solid #fff;
   text-decoration: none;
 }
 .btn-main a:hover {
@@ -251,7 +295,7 @@ img {
 }
 .button {
   text-transform: uppercase;
-  border: 1px solid #ccc;
+  border: none;
   padding: 10px 40px;
   color: #fff;
   margin: 0px 10px;
@@ -259,38 +303,42 @@ img {
 
 /* <-- ============== main ============= --> */
 .icon-image img {
-  width: 16%;
+  width: 15%;
+  padding-bottom: 10px;
 }
 .icon-image {
   width: 100%;
   text-align: center;
   padding-bottom: 5px;
 }
-.list-block {
+/* .list-block-wrapper .list-block {
+ 
+} */
+.list-block .tcl-col-4 {
+  background-color: #333;
   text-align: center;
   width: 100%;
   transform: translateY(-50%);
+  padding: 20px;
 }
-.list-block .item1 {
-  padding: 30px 0px;
-  text-align: center;
-  width: 50%;
-  background-color: #304771;
-  margin: 0;
+.list-block .content-cell {
+  padding: 0 0px;
 }
-
-.list-block .item2 {
-  background-color: #283c61;
+.list-block .item {
+  background-color: blue;
 }
-.list-block .item3 {
-  background-color: #1e3051;
-}
-.title {
-  font-size: 18px;
+.list-block .title {
+  font-size: 30px;
   color: #fff;
-  font-weight: 700;
-  padding-bottom: 5px;
-  text-align: center;
+  padding-bottom: 10px;
+}
+.list-block .description {
+  font-size: 16px;
+  color: white;
+  padding-bottom: 20px;
+}
+.list-block .item-1 {
+  background-color: yellowgreen;
 }
 
 /* <-- ============== main-title ============= --> */
@@ -353,7 +401,7 @@ img {
 .entry-wrapper .entry-image::before {
   content: "";
   display: block;
-  padding-top: 30%;
+  padding-top: 20%;
   background-color: red;
 }
 .entry-image img {
@@ -372,12 +420,12 @@ img {
   text-align: center;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%);
   color: #fff;
 }
 
 .entry .entry-btn {
+  border: none;
   text-align: center;
   background-color: #1e3051;
 }

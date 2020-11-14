@@ -41,6 +41,29 @@
     max-width: 50%;
     flex: 50%;
   }
+  /* <-- ============== main ============= --> */
+  .slider .slide-item::before {
+    padding-top: 100%;
+  }
+  .tcl-container .list-block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .list-block > .tcl-col-4 {
+    max-width: 50%;
+    flex: 50%;
+    transform: translateY(10%);
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+
+  .list-block .item {
+    padding-bottom: 20px;
+  }
+
+  .main-title-wrapper {
+    padding-top: 50px;
+  }
   .list-practice > .tcl-col-4 {
     max-width: 50%;
     flex: 50%;
@@ -52,10 +75,6 @@
   .entry-wrapper .entry-image::before {
     padding-top: 60%;
   }
-  .intro-section-wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 
 @media only screen and (max-width: 567px) {
@@ -63,30 +82,47 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .footer-main .tcl-row > .tcl-col-3 {
-    max-width: 100%;
-    flex: 100%;
-  }
-  .list-practice > .tcl-col-4 {
-    max-width: 100%;
-    flex: 100%;
-  }
+
   .tcl-row > .tcl-col-6 {
     max-width: 100%;
     flex: 1000%;
   }
-  .intro-section-wrapper {
+  .picture-wrapper {
+    max-width: 100%;
+  }
+  .btn-main .button {
+    padding: 0px 50px;
+  }
+  /* <-- ============== main ============= --> */
+  .slider .slide-item::before {
+    padding-top: 100%;
+  }
+  .tcl-container .list-block {
     padding-left: 15px;
     padding-right: 15px;
   }
-  /* <-- ============== main ============= --> */
+  .list-block > .tcl-col-4 {
+    max-width: 100%;
+    flex: 100%;
+    transform: translateY(10%);
+    margin-bottom: 30px;
+  }
 
-  /* <-- =========== main-title ========== --> */
+  .list-block .item {
+    padding-bottom: 20px;
+  }
+  .main-title-wrapper {
+    padding-top: 50px;
+  }
+  /* <-- ========= intro-section =========== --> */
+  /* .intro-section-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  } */
 
   /* <-- =========== entry ========== --> */
   .btn-title {
     transform: translateX(28%);
-    
   }
   .btn-title .btn-text1 {
     text-align: center;
@@ -104,5 +140,15 @@
   }
   .entry-wrapper .entry-image::before {
     padding-top: 100%;
+  }
+  /* <-- =========== pratice ========== --> */
+  .list-practice > .tcl-col-4 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  /* <-- =========== Footer ========== --> */
+  .footer-main .tcl-row > .tcl-col-3 {
+    max-width: 100%;
+    flex: 100%;
   }
 }
