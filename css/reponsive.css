@@ -93,6 +93,42 @@
   .btn-main .button {
     padding: 0px 50px;
   }
+  .header-topbar {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .main-header {
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .icon-search {
+    display: none;
+  }
+  .logo-left {
+    position: absolute;
+    right: -260px;
+  }
+  .title-logo span {
+    font-size: 20px;
+  }
+  .logo-left a img {
+    width:40px;
+  }
+  .wrapper-form-search {
+    display: none;
+  }
+  /* <-- ======= nav-toggle =======--> */
+  .header-main__btn-mobile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 20px;
+    right: 0;
+    display: block;
+  }
   /* <-- ============== main ============= --> */
   .slider .slide-item::before {
     padding-top: 100%;
@@ -132,6 +168,7 @@
     margin-left: auto;
     margin-bottom: 20px;
   }
+
   .practice-wrapper .item {
     width: 100%;
   }

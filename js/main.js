@@ -6,7 +6,7 @@ $(document).ready(function () {
         speed: 300,
         fade: true,
         cssEase: 'linear',
-        autoplay: false,
+        autoplay: true,
         slidesToShow: 1,
         prevArrow: '<div class="custom-arrow arrow-prev"><i class="fas fa-chevron-left"></i></div>',
         nextArrow: '<div class="custom-arrow arrow-next"><i class="fas fa-chevron-right"></i></div>',
