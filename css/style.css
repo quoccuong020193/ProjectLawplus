@@ -32,60 +32,63 @@ img {
 img {
   max-width: 100%;
 }
-[class^="flaticon-"]:before,
-[class*=" flaticon-"]:before,
-[class^="flaticon-"]:after,
-[class*=" flaticon-"]:after {
-  font-size: 15px;
-  vertical-align: middle;
-  margin-left: 0px;
-}
 
 /* <-- =================== HEADER ==================== --> */
-.social {
-  padding-top: 8px;
+/* <!-- =========== Topbar ============--> */
+.social .icon::before,
+.social .icon::after {
+  font-size: 15px;
+}
+.social:nth-child(1) {
+  margin-left: -15px;
+}
+
+.social .icon {
+  margin-right: 5px;
 }
 .social a {
+  padding-top: 7px;
   text-decoration: none;
   list-style-type: none;
   color: #bebebe;
-  margin-left: 15px;
 }
 .social a i {
-  margin: 0px 5px;
+  font-size: 10px;
 }
+
 .social a:hover {
   color: #c8ac48;
 }
+
 .btn {
   text-align: center;
-  width: 150px;
-  padding: 3px;
+  width: 250px;
+  padding: 6px;
   margin-left: 12px;
   background-color: #304771;
 }
 .btn-text {
   text-align: center;
-  padding: 4px;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
 }
 .btn:hover {
   background-color: #c8ac48;
 }
+/* <!-- =========== .main-header ============--> */
 .main-header {
   padding: 7px 0px;
   border-top: 1px solid #ededed;
 }
 .logo-left {
-  padding: 2px 0px 0;
+  padding: 2px 0px;
 }
 .logo-left a{
   padding:12px 5px;
 }
 .logo-left a img {
-  width: 37px;
+  width: 35px;
 }
 .title-logo{
   padding: 10px 0px;
@@ -96,9 +99,14 @@ img {
   font-weight: bold;
   color: #1e3051;
 }
+.main-menu {
+
+  padding: 5px 0px;
+}
 .main-menu ul li {
+  padding:13px 0px;
   list-style-type: none;
-  margin: 20px;
+  margin-left: 38px;
   text-transform: uppercase;
 }
 .main-list {
@@ -125,7 +133,7 @@ img {
 }
 
 .main-list ul {
-  padding-top: 40px;
+  padding-top: 38px;
   width: 200px;
   left: 0;
   z-index: 1;
@@ -184,9 +192,9 @@ img {
 }
 
 /* <-- ========== search =========--> */
-.search {
+/* .search {
   padding: 18px 0px;
-}
+} */
 .search a {
   color: #898989;
 }
@@ -194,10 +202,12 @@ img {
   color: #c8ac48;
 }
 .icon-search {
-  padding: 15px;
+
+  padding: 8px 0px;
 }
 .icon-search a {
-  color: black;
+  color: #898989;
+
 }
 .wrapper-form-search {
   transform: translateY(120%);
@@ -551,7 +561,7 @@ footer {
   margin-right: 12px;
   margin-left: 0px;
 }
-.tcl-col-3::before {
+.footer-column::before {
   content: "";
   display: block;
   height: 2px;
