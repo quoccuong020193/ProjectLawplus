@@ -78,20 +78,21 @@ img {
   padding: 7px 0px;
   border-top: 1px solid #ededed;
 }
-/* .logo a {
-  text-decoration: none;
+.logo-left {
+  padding: 2px 0px 0;
 }
-.logo span {
-  font-size: 24px;
-  padding-top: 10px;
-  color: #304771;
-  font-weight: 700;
-} */
+.logo-left a{
+  padding:12px 5px;
+}
 .logo-left a img {
-  font-size: 1px;
+  width: 37px;
+}
+.title-logo{
+  padding: 10px 0px;
 }
 .title-logo span {
-  font-size: 25px;
+  text-transform: uppercase;
+  font-size: 20px;
   font-weight: bold;
   color: #1e3051;
 }
