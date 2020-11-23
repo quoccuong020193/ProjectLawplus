@@ -32,61 +32,56 @@ img {
 img {
   max-width: 100%;
 }
-[class^="flaticon-"]:before,
-[class*=" flaticon-"]:before,
-[class^="flaticon-"]:after,
-[class*=" flaticon-"]:after {
-  font-size: 15px;
-  vertical-align: middle;
-  margin-left: 0px;
-}
 
 /* <-- =================== HEADER ==================== --> */
-.social {
-  padding-top: 8px;
+/* <!-- =========== Topbar ============--> */
+.social .icon::before,
+.social .icon::after {
+  font-size: 15px;
+}
+.social:nth-child(1) {
+  margin-left: -15px;
+}
+
+.social .icon {
+  margin-right: 5px;
 }
 .social a {
+  padding-top: 7px;
   text-decoration: none;
   list-style-type: none;
   color: #bebebe;
-  margin-left: 15px;
 }
 .social a i {
-  margin: 0px 5px;
+  font-size: 10px;
 }
+
 .social a:hover {
   color: #c8ac48;
 }
+
 .btn {
   text-align: center;
-  width: 150px;
-  padding: 3px;
+  width: 250px;
+  padding: 6px;
   margin-left: 12px;
   background-color: #304771;
 }
 .btn-text {
   text-align: center;
-  padding: 4px;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
 }
 .btn:hover {
   background-color: #c8ac48;
 }
+/* <!-- =========== .main-header ============--> */
 .main-header {
   padding: 7px 0px;
   border-top: 1px solid #ededed;
 }
-/* .logo a {
-  text-decoration: none;
-}
-.logo span {
-  font-size: 24px;
-  padding-top: 10px;
-  color: #304771;
-  font-weight: 700;
-} */
+
 .logo-left a img {
   font-size: 1px;
 }
@@ -96,8 +91,9 @@ img {
   color: #1e3051;
 }
 .main-menu ul li {
+  padding:13px 0px;
   list-style-type: none;
-  margin: 20px;
+  margin-left: 35px;
   text-transform: uppercase;
 }
 .main-list {
@@ -124,7 +120,7 @@ img {
 }
 
 .main-list ul {
-  padding-top: 40px;
+  padding-top: 35px;
   width: 200px;
   left: 0;
   z-index: 1;
@@ -550,7 +546,7 @@ footer {
   margin-right: 12px;
   margin-left: 0px;
 }
-.tcl-col-3::before {
+.footer-column::before {
   content: "";
   display: block;
   height: 2px;
