@@ -54,7 +54,10 @@
     flex: 50%;
     transform: translateY(10%);
     margin-bottom: 30px;
-    justify-content: space-between;
+
+  }
+  .list-block .item::last-child {
+    margin-left: 20px;
   }
 
   .list-block .item {
